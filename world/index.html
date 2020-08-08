@@ -1,16 +1,16 @@
 ---
 layout: page
-title: World Stuffs
+title: World stuffs
 use-site-title: true
-share-img: /img/autumn1.png
-image: /img/autumn1.png
+share-img: /img/autumn1.jpg
+image: /img/autumn1.jpg
 published: true
 ---
 
 <div class="posts-list">
   {% for post in site.posts %}
   {% if post.tags.size > 0 %}
-  {% if post.tags[0]=="linh_tinh" %}
+  {% if post.tags[0]=="world" %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
       <h2 class="post-title">{{ post.title }}</h2>
