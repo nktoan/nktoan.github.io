@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Density-based Clustering
+title: Clustering
 published: true
 #subtitle: 
 #cover-img: /assets/img/path.jpg
