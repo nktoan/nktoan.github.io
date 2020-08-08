@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Density-based Clustering
+published: true
 #subtitle: 
 #cover-img: /assets/img/path.jpg
 #thumbnail-img: /assets/img/thumb.png
