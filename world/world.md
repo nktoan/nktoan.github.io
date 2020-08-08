@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Nocs's Blogs
+title: World Stuffs
 use-site-title: true
 share-img: /img/autumn2.png
 image: /img/autumn2.png
