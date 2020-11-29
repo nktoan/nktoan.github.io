@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Continual Learning
+title: CL Research 1 - ...
 published: true
 #subtitle: 
 #cover-img: /assets/img/path.jpg
