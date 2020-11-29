@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mathematics for Machine Learning.
+title: Math for ML 1 - ...
 published: true
 #subtitle: 
 #cover-img: /assets/img/path.jpg
