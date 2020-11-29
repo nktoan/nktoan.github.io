@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Single Value Decomposition
+title: Mathematics for Machine Learning.
 published: true
 #subtitle: 
 #cover-img: /assets/img/path.jpg
@@ -8,5 +8,3 @@ published: true
 #share-img: /assets/img/path.jpg
 tags: [math]
 ---
-Deadline: 14/09/2020
-
