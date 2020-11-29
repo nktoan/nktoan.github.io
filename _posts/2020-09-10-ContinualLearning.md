@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Continual Learning and Catastrophic Forgetting
+title: Continual Learning
 published: true
 #subtitle: 
 #cover-img: /assets/img/path.jpg
@@ -8,9 +8,6 @@ published: true
 #share-img: /assets/img/path.jpg
 tags: [ml, cs]
 ---
-
-Đây là bài giới thiệu về chủ đề nghiên cứu hiện tại của tôi là Continual Learning.
-
 
 
 
