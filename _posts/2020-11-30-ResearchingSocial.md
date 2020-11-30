@@ -9,7 +9,7 @@ published: true
 tags: [world]
 ---
 
-This post comprises a host of IELTS Writing questions. I wanna do research and write a short summary with each of them.
+This post comprises a host of IELTS Writing questions. I wanna do research and write a short summary about each of them.
 
 1. Some people say that the government should make laws about people's nutrition and food choice. Others argue that it is people’s choice. Discuss both views and give your opinion.
 
