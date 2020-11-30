@@ -9,4 +9,5 @@ published: true
 tags: [world]
 ---
 
-1. VGG
+1. Some people say that the government should make laws about people's nutrition and food choice. Others argue that it is people’s choice. Discuss both views and give your opinion.
+[**FOOD POLICY**](https://en.wikipedia.org/wiki/Food_policy?fbclid=IwAR2ty--E__a0hAkmcZS8culkJlloCZUxXPtTM9pg_y66Qfr0pU-lR7OAkBA) 
