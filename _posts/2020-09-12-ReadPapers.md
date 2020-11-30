@@ -10,4 +10,5 @@ tags: [book]
 ---
 
 **DAY 1**
+
 CVPR 2020 Continual Learning in Computer Vision Competition: Approaches, Results, Current Challenges and Future Directions
