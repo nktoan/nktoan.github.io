@@ -9,7 +9,11 @@ published: true
 tags: [ml, cs, cl]
 ---
 
-**DAY 1**
+## [Self-Attention Meta-Learner for Continual Learning](https://arxiv.org/pdf/2101.12136v1.pdf)
+Ghada Sokar et al., Submitted on 28 Jan 2021
 
-Batch-level Experience Replay with Review for Continual Learning.
+TLDR:
 
+### Key points:
+
+###
