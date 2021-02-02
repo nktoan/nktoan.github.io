@@ -12,7 +12,10 @@ tags: [ml, cs, cl]
 ## [Self-Attention Meta-Learner for Continual Learning](https://arxiv.org/pdf/2101.12136v1.pdf)
 Ghada Sokar et al., Submitted on 28 Jan 2021
 
+**Keywords**: Continual Learning; Prior Knowledge; Self-Attention; Task Agnostic Inference.
+
 TLDR:
+
 
 ### Key points:
 
