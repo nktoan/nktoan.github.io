@@ -14,7 +14,8 @@ Ghada Sokar et al., Submitted on 28 Jan 2021
 
 **Keywords**: Continual Learning; Prior Knowledge; Self-Attention; Task Agnostic Inference.
 
-TLDR:  to learn a prior representation for continual learning that permits and is more proficient at learning future tasks (take advantage of meta-learning to allow the network to learn to pick the relevant sparse representation from the currently existing one, depending on the incoming data) --> incorporate a self-attention mechanism with the meta-learner.
+TLDR:  to learn a prior representation for continual learning that permits and is more proficient at learning future tasks (take advantage of meta-learning to allow the network to learn to pick the relevant sparse representation from the currently existing one, depending on the incoming data -- building on the top of the selected sparse representation from the prior knowledge) 
+&#8594; incorporate a self-attention mechanism with the meta-learner.
 
 
 ### Key points:
