@@ -19,4 +19,8 @@ TLDR:
 
 ### Key points:
 
+### Desiderata:
+
+- selecting the useful and relevant parts only from the previous knowledge to learn each of the future tasks instead of using the whole knowledge
+
 ###
