@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Read One Paper A Day For One Year - Day 1
+title: Dive deep into Continual Learning - Day 1
 published: true
 #subtitle: 
 #cover-img: /assets/img/path.jpg
