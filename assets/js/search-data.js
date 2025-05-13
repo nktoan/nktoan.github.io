@@ -72,15 +72,15 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-yang-song",
+            },{id: "post-from-song-amp-zhou-ideas-in-inference-time-scaling-can-benefit-generative-pre-training-algorithms",
         
-          title: "yang song",
+          title: "From Song &amp; Zhou - Ideas in Inference-time Scaling can Benefit Generative Pre-training...",
         
-        description: "this is what included plotly.js code could look like",
+        description: "how Inference-time Scaling can Benefit Generative Pre-training Algorithms",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/yang-song/";
+            window.location.href = "/blog/2025/inference-first-then-training/";
           
         },
       },{id: "post-a-post-with-plotly-js",
