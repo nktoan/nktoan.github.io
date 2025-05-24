@@ -15,8 +15,8 @@ Yesterday, I came across an insightful article by Jiaming Song and Linqi Zhou, b
 
 ## 🔍 TL;DR
 
-- **Main Idea**: Inference-time efficiency—scaling along _sequence length_ (in LLMs) and _refinement steps_ (in diffusion models)—should inform the _design of generative pre-training algorithms_.
-- **Highlighted Contribution**: Their recent work, **Inductive Moment Matching (IMM)**, introduces a stable, single-stage generative method that outperforms traditional diffusion models in sample quality while also improving inference efficiency.
+- **Main Idea**: Inference-time efficiency—scaling along _sequence length_ (in LLMs) and _refinement steps_ (in diffusion models)—should *inform* the _design of generative pre-training algorithms_. 
+- **Highlighted Contribution**: Their recent work, **Inductive Moment Matching (IMM)**, introduces a stable, single-stage generative method that outperforms traditional diffusion models in sample quality while also improving inference efficiency. The approach is inspired by a fixed-DDIM inference algorithm.
 
 ---
 
@@ -34,7 +34,7 @@ To build more practical and scalable generative pre-training algorithms:
 - **(i)** **Design to scale at inference time** in both **sequence length** and **refinement steps**.
 - **(ii)** **Start with the inference algorithm**, and design training to optimise that inference (i.e., _think about how the model will generate_ before you train it).
 
-### 3. Mixed-Modality Generation: A Call to Action
+### 3. Mixed-Modality Generation
 
 - The inference-first mindset might be particularly valuable in designing **unified models for mixed modalities** (e.g., image + text + audio).
 - **Question posed**: Can we invent _scalable, efficient_ pre-training methods for such settings?
