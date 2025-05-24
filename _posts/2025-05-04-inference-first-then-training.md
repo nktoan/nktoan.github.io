@@ -15,12 +15,13 @@ Yesterday, I came across an insightful article by Jiaming Song and Linqi Zhou, b
 
 ## 🔍 TL;DR
 
-- **Main Idea**: Inference-time efficiency—scaling along _sequence length_ (in LLMs) and _refinement steps_ (in diffusion models)—should *inform* the _design of generative pre-training algorithms_. 
+- **Main Idea**: Inference-time efficiency—scaling along _sequence length_ (in LLMs) and _refinement steps_ (in diffusion models)—should _inform_ the _design of generative pre-training algorithms_.
+
 - **Highlighted Contribution**: Their recent work, **Inductive Moment Matching (IMM)**, introduces a stable, single-stage generative method that outperforms traditional diffusion models in sample quality while also improving inference efficiency. The approach is inspired by a fixed-DDIM inference algorithm.
 
 ---
 
-## 🧠 Key Insights from the Article
+## 🧠 Key insights
 
 ### 1. Breaking the Stagnation in Generative Models
 
@@ -50,6 +51,8 @@ To build more practical and scalable generative pre-training algorithms:
 | ❌ Sequence Length<br>✅ Refinement Steps                       | Diffusion, Energy-based Models, Consistency Models, Parallel Equation Solving |
 | ✅ Sequence Length<br>✅ Refinement Steps _(Outer: Sequence)_   | AR-Diffusion, Rolling Diffusion, MAR, Blockwise Parallel Decoding             |
 | ✅ Sequence Length<br>✅ Refinement Steps _(Outer: Refinement)_ | Autoregressive Distribution Smoothing                                         |
+
+---
 
 ## 🛠 Examples of Fixing the Inference Algorithm
 
