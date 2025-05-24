@@ -9,33 +9,62 @@ chart:
   plotly: true
 ---
 
-Yesterday, I came across an article by Jiaming Song and Linqi Zhou, two renowned researchers in the field of diffusion models. This post will summarise their ideas and share my own thoughts and commentary on their work.
+Yesterday, I came across an insightful article by Jiaming Song and Linqi Zhou, both are leading researchers pushing the boundaries of generative modelling. This blog post summarises their main arguments, explores some key concepts, and includes my own reflections on how their work may shape the future of generative pre-training.
 
-TL,DR:
+---
 
-- Overall, their argument is that an inference-time methodology that focuses on scaling efficiency via `sequence length (in LLMs)` or `refinement steps (in diffusion models)` can inspire novel generative pre-training algorithms.
+## 🔍 TL;DR
 
-- For example, their recent work, **Inductive Moment Matching (IMM)**, addresses the inference efficiency challenges of diffusion models and, coincidentally, offers a stable single-stage algorithm that achieves superior sample quality.
+- **Main Idea**: Inference-time efficiency—scaling along *sequence length* (in LLMs) and *refinement steps* (in diffusion models)—should inform the *design of generative pre-training algorithms*.
+- **Highlighted Contribution**: Their recent work, **Inductive Moment Matching (IMM)**, introduces a stable, single-stage generative method that outperforms traditional diffusion models in sample quality while also improving inference efficiency.
 
-Key Ideas:
+---
 
-- The dominance of autoregressive models for discrete signals and diffusion models for continuous signals has led to a stagnation in the development of new approaches.
+## 🧠 Key Insights from the Article
 
-- For novel and practical generative pre-training algorithms or models, one should consider two approaches:
+### 1. Breaking the Stagnation in Generative Models  
+- **Observation**: Discrete data is dominated by *autoregressive models*; continuous data by *diffusion models*.
+- **Problem**: This paradigm has reached a plateau—limiting exploration into new architectures.
 
-  - (i) develop algorithms that `scale nicely in the two axes (sequence length and sampling steps) during inference`.
-  - (ii) `design inference algorithm before training time` to optimally utilize the model capacity at inference time (much like thinking how they will generate data)`.
+### 2. Two Principles for Future Generative Algorithms  
+To build more practical and scalable generative pre-training algorithms:
+- **(i)** **Design to scale at inference time** in both **sequence length** and **refinement steps**.
+- **(ii)** **Start with the inference algorithm**, and design training to optimise that inference (i.e., *think about how the model will generate* before you train it).
 
-- Can we design such generative pre-training algorithms or models for mixed-modality data? Reflect on the inference perspective first.
+### 3. Mixed-Modality Generation: A Call to Action  
+- The inference-first mindset might be particularly valuable in designing **unified models for mixed modalities** (e.g., image + text + audio).
+- **Question posed**: Can we invent *scalable, efficient* pre-training methods for such settings?
 
-- A list of current generative pre-training algorithms:
+---
 
-| Scalability                                                                 | Methods                                                                                                                            |
-| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+## 📊 Scalability Matrix of Generative Models
+
+| **Scalability**                                                            | **Methods**                                                                                                                        |
+|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | ❌ Sequence Length<br>❌ Refinement Steps                                   | VAE [KW13], GAN [GPAM+14], Normalizing Flows [RM15]                                                                                |
 | ✅ Sequence Length<br>❌ Refinement Steps                                   | GPT [BMR+20], PixelCNN [vdOKK16], MaskGiT [CZJ+22], VAR [TJY+25]                                                                   |
-| ❌ Sequence Length<br>✅ Refinement Steps                                   | Diffusion models [HJA20], Energy-based models [DM19], Consistency models [SDCS23],<br>Parallel nonlinear equation solving [SMLE21] |
-| ✅ Sequence Length<br>✅ Refinement Steps<br>(Outer loop: Sequence Length)  | AR-Diffusion [WFL+23], Rolling diffusion [RHSH24], MAR [LTL+25],<br>Blockwise parallel decoding [SSU18]                            |
-| ✅ Sequence Length<br>✅ Refinement Steps<br>(Outer loop: Refinement Steps) | Autoregressive distribution smoothing [MSS+21]                                                                                     |
+| ❌ Sequence Length<br>✅ Refinement Steps                                   | Diffusion [HJA20], Energy-based [DM19], Consistency [SDCS23], Parallel Equation Solving [SMLE21]                                  |
+| ✅ Sequence Length<br>✅ Refinement Steps<br>*(Outer: Sequence)*            | AR-Diffusion [WFL+23], Rolling Diffusion [RHSH24], MAR [LTL+25], Blockwise Parallel Decoding [SSU18]                              |
+| ✅ Sequence Length<br>✅ Refinement Steps<br>*(Outer: Refinement)*          | Autoregressive Distribution Smoothing [MSS+21]                                                                                     |
 
-- Two instances of fixing inference algorithms: DDIM sampler by conditioning on the future time steps to correct the trajectory and the naïve conditional independence assumption in multi-token prediction.
+---
+
+## 🛠 Examples of Fixing the Inference Algorithm
+
+Two notable strategies where inference design influences training:
+- **DDIM Sampler**: Uses future-time conditioning to refine generation trajectories, e.g., by modeling \( v_{\theta}(x_t, t, s) \), where \( s \) is a future time step.
+- **Multi-token Prediction**: Often assumes conditional independence, which simplifies inference but may limit expressiveness.
+
+---
+
+## 💭 My Thoughts and Takeaways
+
+- Generative algorithms are fundamentally about predicting the next X. Here, X could be the next token in language models (LLMs), the next sample at a future timestep in diffusion models, or the next scale in methods like VAR (NeurIPS 2024). Recently, a paper titled "Next-X Prediction" proposed a generalisation of this idea, unifying various forms of X—including tokens, cells, subsamples, images, and scales—under a single framework. From a slightly different perspective, models like AlphaEvolve can be viewed as predicting the next program or algorithm, while GFlowNets or Mamba correspond to next action-state prediction. MCP, on the other hand, focuses on selecting the next action over a planning horizon.
+
+- In essence, all generative algorithms share one core principle: predicting the next one.
+
+- To design new generative algorithms, we can think in terms of "next-X*-prediction"—where X* is any unit of generation—and explore whether the approach scales well across dimensions such as time, resolution, or abstraction. This idea can also be extended to higher levels, such as predicting at the distributional level (e.g., cluster or segment) or at the probabilistic level (e.g., generating 80% of X and 20% of Y). 
+
+- What about discriminative algorithms? Yann LeCun often champions these over generative ones. However, I believe they can—and should—be integrated. Discriminative insights (e.g., object relationships in images or structural patterns in text) can enrich generative models by informing the structure and coherence of the next-X* prediction. This combination will be very helpful in the multimodal setting.
+
+- My thought is that for text-image models, X* can be smartly designed so that the text must be aligned with the image throughout the generation process.
