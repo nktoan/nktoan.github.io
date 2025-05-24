@@ -43,21 +43,20 @@ To build more practical and scalable generative pre-training algorithms:
 
 ## 📊 Scalability Matrix of Generative Models
 
-| **Scalability**                                                    | **Methods**                                                                                          |
-| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| ❌ Sequence Length<br>❌ Refinement Steps                          | VAE [KW13], GAN [GPAM+14], Normalizing Flows [RM15]                                                  |
-| ✅ Sequence Length<br>❌ Refinement Steps                          | GPT [BMR+20], PixelCNN [vdOKK16], MaskGiT [CZJ+22], VAR [TJY+25]                                     |
-| ❌ Sequence Length<br>✅ Refinement Steps                          | Diffusion [HJA20], Energy-based [DM19], Consistency [SDCS23], Parallel Equation Solving [SMLE21]     |
-| ✅ Sequence Length<br>✅ Refinement Steps<br>_(Outer: Sequence)_   | AR-Diffusion [WFL+23], Rolling Diffusion [RHSH24], MAR [LTL+25], Blockwise Parallel Decoding [SSU18] |
-| ✅ Sequence Length<br>✅ Refinement Steps<br>_(Outer: Refinement)_ | Autoregressive Distribution Smoothing [MSS+21]                                                       |
-
----
+| **Scalability**                                                 | **Methods**                                                                   |
+| --------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| ❌ Sequence Length<br>❌ Refinement Steps                       | VAE, GAN, Normalizing Flows                                                   |
+| ✅ Sequence Length<br>❌ Refinement Steps                       | GPT, PixelCNN, MaskGiT, VAR                                                   |
+| ❌ Sequence Length<br>✅ Refinement Steps                       | Diffusion, Energy-based Models, Consistency Models, Parallel Equation Solving |
+| ✅ Sequence Length<br>✅ Refinement Steps _(Outer: Sequence)_   | AR-Diffusion, Rolling Diffusion, MAR, Blockwise Parallel Decoding             |
+| ✅ Sequence Length<br>✅ Refinement Steps _(Outer: Refinement)_ | Autoregressive Distribution Smoothing                                         |
 
 ## 🛠 Examples of Fixing the Inference Algorithm
 
 Two notable strategies where inference design influences training:
 
-- **DDIM Sampler**: Uses future-time conditioning to refine generation trajectories, e.g., by modeling \( v\_{\theta}(x_t, t, s) \), where \( s \) is a future time step.
+- **DDIM Sampler**: Uses future-time conditioning to refine generation trajectories, for example by modeling $v_{\theta}(x_t, t, s)$ where $s$ is a future time step.
+
 - **Multi-token Prediction**: Often assumes conditional independence, which simplifies inference but may limit expressiveness.
 
 ---
