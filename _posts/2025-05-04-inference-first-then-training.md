@@ -66,7 +66,7 @@ Two notable strategies where inference design influences training:
 
 ## 💭 My Thoughts and Takeaways
 
-- Generative algorithms are fundamentally about predicting the next X. Here, X could be the next token in language models (LLMs), the next sample at a future timestep in diffusion models, or the next scale in methods like VAR (NeurIPS 2024). Recently, a paper titled "Next-X Prediction" proposed a generalisation of this idea, unifying various forms of X—including tokens, cells, subsamples, images, and scales—under a single framework. From a slightly different perspective, models like AlphaEvolve can be viewed as predicting the next program or algorithm, while GFlowNets or Mamba correspond to next action-state prediction. MCP, on the other hand, focuses on selecting the next action over a planning horizon.
+- Generative algorithms are fundamentally about predicting the next X. Here, X could be the next token in language models (LLMs), the next sample at a future timestep in diffusion models, or the next scale in methods like VAR (NeurIPS 2024). Recently, a paper titled "Next-X Prediction" proposed a generalisation of this idea, unifying various forms of X—including tokens, cells, subsamples, images, and scales—under a single framework. From a slightly different perspective, models like AlphaEvolve can be viewed as predicting the next program or algorithm, while GFlowNets or Mamba correspond to next action-state prediction. Model Predictive Control, on the other hand, focuses on selecting the next action over a planning horizon.
 
 - In essence, all generative algorithms share one core principle: predicting the next one.
 
