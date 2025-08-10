@@ -46,16 +46,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-our-paper-on-image-editing-with-diffusion-models-for-which-i-am-the-lead-author-has-been-accepted-to-cvpr-2025",
+          title: 'Our paper on image editing with diffusion models, for which I am the...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-our-paper-on-diffusion-bridge-models-has-been-accepted-to-kdd-2025-research-track",
+          title: 'Our paper on diffusion bridge models has been accepted to KDD 2025 (Research Track)....',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
