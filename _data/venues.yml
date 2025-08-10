@@ -7,3 +7,31 @@
 
 "Vision":
   color: "#009f36"
+
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#91917c"
+
+"AISTATS":
+  url: https://aistats.org/
+  color: "#6d6875"
+
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#0048BA"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#4E6C50"
+
+"ICML Workshop":
+  url: https://icml.cc/
+  color: "#636C4E"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#820000"
+
+"ICASSP":
+  url: https://2023.ieeeicassp.org/
+  color: "#E4C988"
