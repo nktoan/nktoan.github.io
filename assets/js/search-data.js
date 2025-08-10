@@ -30,21 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/blog/";
-              },
-            },{id: "post-from-song-amp-zhou-ideas-in-inference-time-scaling-can-benefit-generative-pre-training-algorithms",
+        },{id: "post-from-song-amp-zhou-ideas-in-inference-time-scaling-can-benefit-generative-pre-training-algorithms",
         
           title: "From Song &amp; Zhou - Ideas in Inference-time Scaling can Benefit Generative Pre-training...",
         
