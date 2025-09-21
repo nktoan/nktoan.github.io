@@ -5,4 +5,5 @@ inline: true
 related_posts: false
 ---
 
-I am delighted to announce that I will be joining [Professor Flora Salim's Lab](https://cruiseresearchgroup.github.io/) at UNSW Sydney to conduct research in continual multimodal learning, focusing on vision–language models (VLMs) and video domains.
+I am delighted to announce that I will be joining [Professor Flora Salim's Lab](https://cruiseresearchgroup.github.io/) at UNSW Sydney as a Postdoctoral Researcher, where I will work on continual multimodal learning with a focus on vision–language models (VLMs) and video domains.
+
