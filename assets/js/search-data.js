@@ -47,6 +47,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-diffusion-bridge-models-has-been-accepted-to-kdd-2025-research-track",
           title: 'Our paper on diffusion bridge models has been accepted to KDD 2025 (Research Track)....',
           description: "",
+          section: "News",},{id: "news-i-am-delighted-to-announce-that-i-will-be-joining-professor-flora-salim-s-lab-at-unsw-sydney-to-conduct-research-in-continual-multimodal-learning-focusing-on-vision-language-models-vlms-and-video-domains",
+          title: 'I am delighted to announce that I will be joining Professor Flora Salim’s...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
